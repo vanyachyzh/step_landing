@@ -1,6 +1,6 @@
 # DIA Creative Agency Landing Page
 
-[Demo link](https://vanyachyzh.github.io/landing_Dia/)
+[Demo link](https://vanyachyzh.github.io/landing_dia/)
 
 [Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))
 
