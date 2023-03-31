@@ -2,7 +2,7 @@
 
 [DEMO LINK](https://vanyachyzh.github.io/landing_Dia/)
 
-[Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia)))
+[Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))
 
 This is a landing page for DIA Creative Agency, built using HTML, CSS, and SCSS with BEM methodology. The landing page showcases the agency's services, portfolio, and team. The landing page is designed to be adaptive to different screen sizes, including mobile, tablet, and desktop devices, as well as screens over 1600px.
 
