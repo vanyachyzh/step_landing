@@ -2,18 +2,13 @@
   position: relative;
   background-color: #fff;
   width: 100%;
-  // max-width: 280px;
   height: 264px;
   border-radius: 16px;
   padding: 32px;
   transition: transform $duration;
 
-  &:hover {
-    transform: scale(101%);
-  }
-
-  @include onTablet {
-    // width: 100%;
+  @include onDesktop {
+    padding: 30px 23px;
 
   }
 
@@ -33,13 +28,30 @@
   }
 
   &__button {
-    position: absolute;
-    bottom: 32px;
+      position: absolute;
+      height: min-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      padding-right: 20px;
+      bottom: 25px;
+      cursor: pointer;
+      border: none;
+      transition: all $duration;
+    
+      &:hover {
+        color: #fff;
+        background-color: $bc-blue;
+        box-shadow: 0 0 5px 0 $bc-blue;
+      }
   }
 
   &__capture {
-    position: absolute;
-    bottom: 46px;
-    left: 88px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: semibold;
+    line-height: 22px;
   }
 }

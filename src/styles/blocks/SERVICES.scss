@@ -1,6 +1,13 @@
 .services {
+  padding-top: 10px;
+
   @include onTablet {
-    margin-bottom: 148px;
+    margin-bottom: 80px;
+  }
+
+  @include onDesktop {
+    padding-top: 150px;
+    margin-bottom: 80px;
   }
 
   &__intro {

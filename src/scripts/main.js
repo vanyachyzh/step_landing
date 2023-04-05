@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 const form = document.querySelector('.form');
@@ -10,12 +11,34 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
+window.onload = function() {
+  const hash = localStorage.getItem('hash');
+
+  if (hash) {
+    window.location.hash = hash;
+
+    if (window.location.hash === '#menu') {
+      localStorage.setItem('hash', window.location.hash);
+      page.style.overflow = 'hidden';
+    } else {
+      page.style.overflow = 'visible';
+    }
+  }
+};
+
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
+    localStorage.setItem('hash', window.location.hash);
     page.style.overflow = 'hidden';
   } else {
+    localStorage.removeItem('hash');
     page.style.overflow = 'visible';
   }
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  form.reset();
 });
 
 let slideIndex = 1;

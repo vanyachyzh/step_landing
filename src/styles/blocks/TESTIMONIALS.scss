@@ -1,5 +1,10 @@
 .testimonials {
+  padding-top: 10px;
   margin-bottom: $mb;
+
+  @include onDesktop {
+    padding-top: 60px;
+  }
 
   &__title {
     margin-bottom: 48px;

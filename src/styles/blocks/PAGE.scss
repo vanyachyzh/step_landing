@@ -14,6 +14,7 @@
   &__about {
     margin: 0 auto 120px;
     max-width: 716px;
+    padding-top: 60px;
 
     @include onTablet {
       margin-bottom: 148px;
