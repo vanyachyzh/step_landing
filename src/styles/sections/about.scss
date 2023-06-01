@@ -1,0 +1,54 @@
+.about {
+  padding: 0 170px 81px;
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #a7a7ac;
+    margin-bottom: 48px;
+  }
+
+  &__video {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__suggestion {
+    position: relative;
+    padding-left: 30px;
+    font-family: 'TroubleSide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #A8B3C1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -70px;
+      left: -45px;
+      background: url(../images/sketch-arrow.svg);
+      width: 70px;
+      height: 100px;
+    }
+  }
+}

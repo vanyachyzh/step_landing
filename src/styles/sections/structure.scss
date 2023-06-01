@@ -1,0 +1,27 @@
+.structure {
+  background-color: #fff;
+
+  &__content {
+    padding: 120px 52px;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1D1D1F;
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    margin-top: 111px;
+  }
+}

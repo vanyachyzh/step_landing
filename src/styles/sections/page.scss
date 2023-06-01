@@ -1,0 +1,25 @@
+html {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background: url(../images/background-square.svg) #000;
+}
+
+.page {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 677px;
+    height: 531.76px;
+    position: absolute;
+    left: -200px;
+    top: -200px;
+    z-index: 0;
+    background: rgba(47, 44, 164, 0.75);
+    filter: blur(150px);
+    transform: rotate(-42.51deg);
+  }
+}

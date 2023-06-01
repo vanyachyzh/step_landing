@@ -1,0 +1,50 @@
+.format-card {
+  background: #28292E;
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  &__detail-key {
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #A7A7AC;
+    margin-bottom: 5px;
+  }
+
+  &__detail-value {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__buttons {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 24px;
+
+    & > button {
+      width: 100%;
+    }
+  }
+}

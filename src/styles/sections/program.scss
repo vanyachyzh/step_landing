@@ -1,0 +1,33 @@
+.program {
+  background-color: #fff;
+
+  &__content {
+    padding: 0 52px;
+  }
+
+  &__list {
+    background: #000;
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 120px 48px;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+    margin-bottom: 96px;
+  }
+
+  &__accordion {
+    margin-top: 16px;
+  }
+
+  &__button {
+    display: block;
+    margin: 64px auto 0;
+  }
+}

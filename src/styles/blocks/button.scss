@@ -1,0 +1,36 @@
+.button {
+  padding: 13.5px 32px;
+  border-radius: 6px;
+  border: none;
+  width: fit-content;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
+
+  transition: all ease-out 300ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(103%);
+  }
+
+  &--primary {
+    background: #4744C9;
+
+    &:active {
+      transform: scale(103%);
+      background: #312f85;
+    }
+  }
+
+  &--secondary {
+    background: #3E3F44;
+
+    &:active {
+      transform: scale(103%);
+      background: #2c2c2f;
+    }
+  }
+}
