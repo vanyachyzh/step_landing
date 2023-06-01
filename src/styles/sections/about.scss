@@ -1,6 +1,10 @@
 .about {
   padding: 0 170px 81px;
 
+  @include onTablet {
+    padding: 0 35px 41px;
+  }
+
   &__title {
     display: block;
     text-align: center;
@@ -9,6 +13,11 @@
     line-height: 58px;
     color: #fff;
     margin-bottom: 24px;
+
+    @include onTablet {
+      font-size: 35px;
+      text-align: center;
+    }
   }
 
   &__description {
@@ -21,6 +30,10 @@
     text-align: center;
     color: #a7a7ac;
     margin-bottom: 48px;
+
+    @include onTablet {
+      font-size: 18px;
+    }
   }
 
   &__video {
@@ -33,13 +46,18 @@
   &__suggestion {
     position: relative;
     padding-left: 30px;
-    font-family: 'TroubleSide';
+    font-family: TroubleSide, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.03em;
-    color: #A8B3C1;
+    color: #a8b3c1;
+
+    @include onTablet {
+      font-size: 15px;
+      padding-left: 20px;
+    }
 
     &::after {
       content: "";
@@ -49,6 +67,13 @@
       background: url(../images/sketch-arrow.svg);
       width: 70px;
       height: 100px;
+
+      @include onTablet {
+        background-size: 50px;
+        background-repeat: no-repeat;
+        top: -50px;
+        left: -35px;
+      }
     }
   }
 }

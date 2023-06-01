@@ -11,6 +11,67 @@
 
   <body>
     <header class="header">
+      <div class="menu" id="menu">
+
+        <div class="menu__panel">
+          <a class="menu__cross" href="#">
+            <img
+              class="cross-menu"
+              src="./images/icons/cross.svg"
+              alt="cross"
+            >
+          </a>
+        </div>
+
+        <nav class="menu__navigation">
+          <ul class="menu__list">
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Очное обучение
+              </button>
+
+              <div class="dropdown__content">
+                Ссылки
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Online-обучение
+              </button>
+
+              <div class="dropdown__content">
+                Ссылки
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Наши проекты
+              </button>
+
+              <div class="dropdown__content">
+                Ссылки
+              </div>
+            </div>
+
+            <a class="menu__link" href="#">Мероприятия</a>
+
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Об Академии
+              </button>
+
+              <div class="dropdown__content">
+                Ссылки
+              </div>
+            </div>
+
+            <a class="menu__link" href="#">Контакты</a>
+          </ul>
+        </nav>
+      </div>
+
       <div class="header__panel">
         <div class="container">
           <div class="header__panel-content">
@@ -18,52 +79,62 @@
               <img src="./images/logo.svg" alt="Step">
             </a>
 
+            <a class="header__menu" href="#menu">
+              <img
+                class="burger-menu"
+                src="./images/icons/menu.svg"
+                alt="menu"
+              >
+            </a>
+
             <nav class="header__navigation">
-              <div class="dropdown">
-                <button class="dropdown__button">
-                  Очное обучение
-                </button>
-
-                <div class="dropdown__content">
-                  Ссылки
+              <ul class="header__list">
+                <div class="dropdown">
+                  <button class="dropdown__button">
+                    Очное обучение
+                  </button>
+  
+                  <div class="dropdown__content">
+                    Ссылки
+                  </div>
                 </div>
-              </div>
-    
-              <div class="dropdown">
-                <button class="dropdown__button">
-                  Online-обучение
-                </button>
-
-                <div class="dropdown__content">
-                  Ссылки
+      
+                <div class="dropdown">
+                  <button class="dropdown__button">
+                    Online-обучение
+                  </button>
+  
+                  <div class="dropdown__content">
+                    Ссылки
+                  </div>
                 </div>
-              </div>
-
-              <div class="dropdown">
-                <button class="dropdown__button">
-                  Наши проекты
-                </button>
-
-                <div class="dropdown__content">
-                  Ссылки
+  
+                <div class="dropdown">
+                  <button class="dropdown__button">
+                    Наши проекты
+                  </button>
+  
+                  <div class="dropdown__content">
+                    Ссылки
+                  </div>
                 </div>
-              </div>
-
-              <a class="header__link" href="#">Мероприятия</a>
-
-              <div class="dropdown">
-                <button class="dropdown__button">
-                  Об Академии
-                </button>
-
-                <div class="dropdown__content">
-                  Ссылки
+  
+                <a class="header__link" href="#">Мероприятия</a>
+  
+                <div class="dropdown">
+                  <button class="dropdown__button">
+                    Об Академии
+                  </button>
+  
+                  <div class="dropdown__content">
+                    Ссылки
+                  </div>
                 </div>
-              </div>
-
-              <a class="header__link" href="#">Контакты</a>
-    
-              <div class="status" href="">Live</div>
+  
+                <a class="header__link" href="#">Контакты</a>
+      
+                <div class="status">Live</div>
+              </ul>
             </nav>
     
             <div class="header__phone">
@@ -144,7 +215,11 @@
             инструменты с нуля.
           </span>
 
-          <video class="about__video" src="" controls></video>
+          <video
+            class="about__video"
+            src="#"
+            controls
+          ></video>
           <span class="about__suggestion">узнайте Как проходит обучение</span>
         </section>
       </div>
@@ -269,7 +344,11 @@
   
               <div class="collapsible-accordion program__accordion">
                 <div class="collapsible-item">
-                  <input class="collapsible-input" type="checkbox" id="tab1">
+                  <input
+                    class="collapsible-input"
+                    type="checkbox"
+                    id="tab1"
+                  >
   
                   <label class="collapsible-item-label" for="tab1">
                     2D графика и макетирование
@@ -319,7 +398,11 @@
   
               <div class="collapsible-accordion program__accordion">
                 <div class="collapsible-item">
-                  <input class="collapsible-input" type="checkbox" id="tab2">
+                  <input
+                    class="collapsible-input"
+                    type="checkbox"
+                    id="tab2"
+                  >
   
                   <label class="collapsible-item-label" for="tab2">
                     Wев-дисциплины
@@ -349,7 +432,11 @@
   
               <div class="collapsible-accordion program__accordion">
                 <div class="collapsible-item">
-                  <input class="collapsible-input" type="checkbox" id="tab3">
+                  <input
+                    class="collapsible-input"
+                    type="checkbox"
+                    id="tab3"
+                  >
   
                   <label class="collapsible-item-label" for="tab3">
                     3D Графика
@@ -383,7 +470,11 @@
   
               <div class="collapsible-accordion program__accordion">
                 <div class="collapsible-item">
-                  <input class="collapsible-input" type="checkbox" id="tab4">
+                  <input
+                    class="collapsible-input"
+                    type="checkbox"
+                    id="tab4"
+                  >
   
                   <label class="collapsible-item-label" for="tab4">
                     Анимация и видео
@@ -437,39 +528,87 @@
               <img
                 class="gallery__photo--1 gallery__photo"
                 src="./images/photos/img-1.png"
-                alt=""
+                alt="Team"
               >
 
               <img
                 class="gallery__photo--2 gallery__photo"
                 src="./images/photos/img-2.png"
-                alt=""
+                alt="Команда"
               >
 
               <img
                 class="gallery__photo--3 gallery__photo"
                 src="./images/photos/img-3.png"
-                alt=""
+                alt="Команда"
               >
 
               <img
                 class="gallery__photo--4 gallery__photo"
                 src="./images/photos/img-4.png"
-                alt=""
+                alt="Команда"
               >
 
               <img
                 class="gallery__photo--5 gallery__photo"
                 src="./images/photos/img-5.png"
-                alt=""
+                alt="Команда"
               >
 
               <img
                 class="gallery__photo--6 gallery__photo"
                 src="./images/photos/img-6.jpg"
-                alt=""
+                alt="Команда"
               >
             </div>
+
+            <div class="slider gallery__slider">
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-1.png"
+                  alt="Команда"
+                >
+              </div>
+
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-2.png"
+                  alt="Команда"
+                >
+              </div>
+
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-3.png"
+                  alt="Команда"
+                >
+              </div>
+
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-4.png"
+                  alt="Команда"
+                >
+              </div>
+
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-5.png"
+                  alt="Команда"
+                >
+              </div>
+
+              <div class="slider-item">
+                <img
+                  src="./images/photos/img-6.jpg"
+                  alt="Команда"
+                >
+              </div>
+
+              <button class="prev-button">&#60;</button>
+              <button class="next-button">&#62;</button>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -505,7 +644,7 @@
                 </div>
           
                 <div class="format-card__section">
-                  <div class="payment">
+                  <div class="payment format-card__payment">
                     <span class="payment__type">Оплата частями</span>
           
                     <div>
@@ -514,7 +653,7 @@
                     </div>
                   </div>
           
-                  <div class="payment">
+                  <div class="payment format-card__payment">
                     <span class="payment__type">Полная оплата</span>
           
                     <div>
@@ -565,7 +704,7 @@
                 </div>
           
                 <div class="format-card__section">
-                  <div class="payment">
+                  <div class="payment format-card__payment">
                     <span class="payment__type">Оплата частями</span>
           
                     <div>
@@ -574,7 +713,7 @@
                     </div>
                   </div>
           
-                  <div class="payment">
+                  <div class="payment format-card__payment">
                     <span class="payment__type">Полная оплата</span>
           
                     <div>
@@ -599,10 +738,11 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
       </section>
     </main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 

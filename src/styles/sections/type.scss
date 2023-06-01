@@ -3,6 +3,10 @@
 
   &__content {
     padding: 120px 52px;
+
+    @include onTablet {
+      padding: 60px 24px;
+    }
   }
 
   &__title {
@@ -13,6 +17,11 @@
     line-height: 58px;
     color: #fff;
     margin-bottom: 96px;
+
+    @include onTablet {
+      margin-bottom: 70px;
+      font-size: 35px;
+    }
   }
 
   &__format-card {

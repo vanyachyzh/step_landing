@@ -1,14 +1,20 @@
 .format-card {
-  background: #28292E;
+  background: #28292e;
   border-radius: 16px;
   padding: 24px;
   color: #fff;
 
   &__section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
     margin-bottom: 48px;
+
+    @include onTablet {
+      gap: 0;
+      margin-bottom: 24px;
+    }
 
     &:last-child {
       margin: 0;
@@ -20,20 +26,46 @@
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 24px;
+
+    @include onTablet {
+      font-size: 25px;
+    }
+  }
+
+  &__detail {
+    @include onTablet {
+      width: 50%;
+      margin-bottom: 10px;
+    }
   }
 
   &__detail-key {
     display: block;
     font-size: 18px;
     line-height: 28px;
-    color: #A7A7AC;
+    color: #a7a7ac;
     margin-bottom: 5px;
+
+    @include onTablet {
+      font-size: 17px;
+    }
   }
 
   &__detail-value {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+
+    @include onTablet {
+      font-size: 17px;
+    }
+  }
+
+  &__payment {
+    @include onTablet {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 
   &__buttons {
@@ -42,6 +74,12 @@
     flex-direction: column;
     justify-content: end;
     gap: 24px;
+
+    @include onTablet {
+      width: 100%;
+      flex-direction: row;
+      margin-top: 10px;
+    }
 
     & > button {
       width: 100%;

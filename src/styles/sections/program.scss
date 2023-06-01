@@ -3,6 +3,10 @@
 
   &__content {
     padding: 0 52px;
+
+    @include onTablet {
+      padding: 0 24px;
+    }
   }
 
   &__list {
@@ -10,6 +14,10 @@
     border-radius: 16px;
     margin: 0 auto;
     padding: 120px 48px;
+
+    @include onTablet {
+      padding: 60px 30px;
+    }
   }
 
   &__title {
@@ -20,6 +28,11 @@
     line-height: 58px;
     color: #fff;
     margin-bottom: 96px;
+
+    @include onTablet {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
   }
 
   &__accordion {
@@ -29,5 +42,9 @@
   &__button {
     display: block;
     margin: 64px auto 0;
+
+    @include onTablet {
+      margin: 36px auto 0;
+    }
   }
 }

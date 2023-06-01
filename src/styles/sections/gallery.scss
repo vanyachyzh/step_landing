@@ -3,6 +3,10 @@
 
   &__content {
     padding: 60px 52px;
+
+    @include onTablet {
+      padding: 60px 24px;
+    }
   }
 
   &__title {
@@ -11,8 +15,13 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
-    color: #000000;
+    color: #000;
     margin-bottom: 24px;
+
+    @include onTablet {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
   }
 
   &__description {
@@ -25,6 +34,19 @@
     text-align: center;
     color: #a7a7ac;
     margin-bottom: 96px;
+
+    @include onTablet {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .slider {
+    display: none;
+    
+    @include onTablet {
+      display: block;
+    }
   }
 
   &__grid {
@@ -36,6 +58,10 @@
       "p1 p1 p6 p6"
       "p4 p5 p6 p6";
     grid-gap: 24px;
+
+    @include onTablet {
+      display: none;
+    }
   }
 
   &__photo {

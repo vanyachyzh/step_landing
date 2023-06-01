@@ -14,6 +14,10 @@
     align-items: start;
     height: 60px;
     padding: 0 52px;
+
+    @include onTablet {
+      padding: 0 15px;
+    }
   }
 
   &__banner {
@@ -23,9 +27,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include onTablet {
+      padding-left: 0;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   &__navigation {
+    height: 100%;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__list {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -37,6 +61,10 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    @include onTablet {
+      display: none;
+    }
   }
 
   &__link {
@@ -51,6 +79,10 @@
     display: flex;
     flex-direction: column;
     max-width: 571px;
+
+    @include onTablet {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -59,13 +91,22 @@
     line-height: 77px;
     color: #fff;
     margin-bottom: 24px;
+
+    @include onTablet {
+      font-size: 50px;
+      text-align: center;
+    }
   }
 
   &__description {
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    color: #A8B3C1;
+    color: #a8b3c1;
     margin-bottom: 48px;
+
+    @include onTablet {
+      font-size: 18px;
+    }
   }
 }

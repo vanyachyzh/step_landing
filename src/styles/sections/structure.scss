@@ -3,6 +3,10 @@
 
   &__content {
     padding: 120px 52px;
+
+    @include onTablet {
+      padding: 60px 25px;
+    }
   }
 
   &__title {
@@ -11,7 +15,12 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
-    color: #1D1D1F;
+    color: #1d1d1f;
+
+    @include onTablet {
+      font-size: 35px;
+      text-align: center;
+    }
   }
 
   &__cards {
@@ -22,6 +31,10 @@
   }
 
   &__card {
-    margin-top: 111px;
+    margin: 111px auto 0;
+
+    @include onTablet {
+      margin-top: 50px;
+    }
   }
 }

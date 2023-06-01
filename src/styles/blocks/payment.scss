@@ -1,7 +1,7 @@
 .payment {
   width: fit-content;
   padding: 24px;
-  background: #3E3F44;
+  background: #3e3f44;
   border-radius: 16px;
   color: #fff;
   font-weight: 500;
@@ -13,16 +13,28 @@
   justify-content: start;
   gap: 16px;
 
+  @include onTablet {
+    font-size: 17px;
+  }
+
   &__amount {
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     margin-right: 4px;
+
+    @include onTablet {
+      font-size: 40px;
+    }
   }
 
   &__currency {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+
+    @include onTablet {
+      font-size: 17px;
+    }
   }
 }
