@@ -28,12 +28,12 @@
 
 .prev-button {
   left: 0;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 6px 6px 0;
 }
 
 .next-button {
   right: 0;
-  border-radius: 2px 0 0 2px;
+  border-radius: 6px 0 0 6px;
 }
 
 .prev-button,
@@ -56,6 +56,31 @@
 
   &:hover {
     opacity: 1;
-    -webkit-transition: all 0.2s ease;
+    -webkit-transition: all 200ms ease;
   }
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 7;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-dots-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e2dfdf;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.slider-dots-dot.active {
+  background: #4744C9;;
 }

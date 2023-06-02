@@ -36,12 +36,12 @@
   }
 
   &__accordion {
-    margin-top: 16px;
+    margin-top: 48px;
   }
 
   &__button {
     display: block;
-    margin: 64px auto 0;
+    margin: 96px auto 0;
 
     @include onTablet {
       margin: 36px auto 0;

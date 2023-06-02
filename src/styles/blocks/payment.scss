@@ -1,5 +1,5 @@
 .payment {
-  width: fit-content;
+  min-width: 300px;
   padding: 24px;
   background: #3e3f44;
   border-radius: 16px;
@@ -26,6 +26,11 @@
     @include onTablet {
       font-size: 40px;
     }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   &__currency {

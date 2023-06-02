@@ -74,12 +74,12 @@
 
       <div class="header__panel">
         <div class="container">
-          <div class="header__panel-content">
+          <div class="panel">
             <a href="#">
               <img src="./images/logo.svg" alt="Step">
             </a>
 
-            <a class="header__menu" href="#menu">
+            <a class="panel__menu" href="#menu">
               <img
                 class="burger-menu"
                 src="./images/icons/menu.svg"
@@ -87,9 +87,9 @@
               >
             </a>
 
-            <nav class="header__navigation">
-              <ul class="header__list">
-                <div class="dropdown">
+            <nav class="panel__navigation">
+              <ul class="panel__list">
+                <div class="dropdown panel__dropdown">
                   <button class="dropdown__button">
                     Очное обучение
                   </button>
@@ -98,18 +98,10 @@
                     Ссылки
                   </div>
                 </div>
-      
-                <div class="dropdown">
-                  <button class="dropdown__button">
-                    Online-обучение
-                  </button>
+
+                <a class="panel__link" href="#">Online-обучение</a>
   
-                  <div class="dropdown__content">
-                    Ссылки
-                  </div>
-                </div>
-  
-                <div class="dropdown">
+                <div class="dropdown panel__dropdown">
                   <button class="dropdown__button">
                     Наши проекты
                   </button>
@@ -119,9 +111,9 @@
                   </div>
                 </div>
   
-                <a class="header__link" href="#">Мероприятия</a>
+                <a class="panel__link" href="#">Мероприятия</a>
   
-                <div class="dropdown">
+                <div class="dropdown panel__dropdown">
                   <button class="dropdown__button">
                     Об Академии
                   </button>
@@ -131,13 +123,13 @@
                   </div>
                 </div>
   
-                <a class="header__link" href="#">Контакты</a>
+                <a class="panel__link" href="#">Контакты</a>
       
                 <div class="status">Live</div>
               </ul>
             </nav>
     
-            <div class="header__phone">
+            <div class="panel__phone">
               <div class="dropdown">
                 <button class="dropdown__button">
                   +38 (044) 537 22 60
@@ -215,11 +207,15 @@
             инструменты с нуля.
           </span>
 
-          <video
+          <iframe
             class="about__video"
-            src="#"
-            controls
-          ></video>
+            width="560"
+            height="315" src="https://www.youtube.com/embed/Ptc8uDaO8vY" title="YouTub video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
           <span class="about__suggestion">узнайте Как проходит обучение</span>
         </section>
       </div>
@@ -557,7 +553,7 @@
 
               <img
                 class="gallery__photo--6 gallery__photo"
-                src="./images/photos/img-6.jpg"
+                src="./images/photos/img-4.png"
                 alt="Команда"
               >
             </div>
@@ -603,6 +599,14 @@
                   src="./images/photos/img-6.jpg"
                   alt="Команда"
                 >
+              </div>
+
+              <div class="slider-dots">
+                <div class="slider-dots-dot"></div>
+                <div class="slider-dots-dot"></div>
+                <div class="slider-dots-dot"></div>
+                <div class="slider-dots-dot"></div>
+                <div class="slider-dots-dot"></div>
               </div>
 
               <button class="prev-button">&#60;</button>

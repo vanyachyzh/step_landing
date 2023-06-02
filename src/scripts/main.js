@@ -5,6 +5,14 @@ const pen = $('.installation__pen');
 const ps = $('.installation__ps');
 const slots = $('.installation__slots');
 const figma = $('.installation__figma');
+const $sliderItems = $('.slider-item');
+const $prevButton = $('.prev-button');
+const $nextButton = $('.next-button');
+const $sliderDots = $('.slider-dots-dot');
+
+let currentSlide = 0;
+
+// Menu
 
 $(document).ready(function() {
   const page = $('.page');
@@ -34,6 +42,8 @@ $(window).on('hashchange', function() {
   }
 });
 
+// Moving man
+
 $(document).on('mousemove', function(event) {
   const mouseX = event.clientX;
   const mouseY = event.clientY;
@@ -45,36 +55,37 @@ $(document).on('mousemove', function(event) {
   ps.css('transform', `translate(-${mouseX / 50}px,-${mouseY / 50}px)`);
 });
 
-const sliderItems = document.querySelectorAll('.slider-item');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-
-let currentSlide = 0;
+// Slider
 
 function showSlide(slideIndex) {
   if (slideIndex < 0) {
-    slideIndex = sliderItems.length - 1;
-  } else if (slideIndex >= sliderItems.length) {
+    slideIndex = $sliderItems.length - 1;
+  } else if (slideIndex >= $sliderItems.length) {
     slideIndex = 0;
   }
 
-  sliderItems.forEach((item, index) => {
-    if (index === slideIndex) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
+  $sliderItems.each(function(index, item) {
+    $(item).toggleClass('active', index === slideIndex);
+  });
+
+  $sliderDots.each(function(index, dot) {
+    $(dot).toggleClass('active', index === slideIndex);
   });
 
   currentSlide = slideIndex;
 }
 
-prevButton.addEventListener('click', () => {
+$prevButton.on('click', () => {
   showSlide(currentSlide - 1);
 });
 
-nextButton.addEventListener('click', () => {
+$nextButton.on('click', () => {
   showSlide(currentSlide + 1);
+});
+
+$sliderDots.on('click', function() {
+  const index = $(this).index();
+  showSlide(index);
 });
 
 showSlide(currentSlide);

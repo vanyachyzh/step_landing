@@ -1,0 +1,56 @@
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 60px;
+  padding: 0 52px;
+
+  @include onTablet {
+    padding: 0 15px;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    height: 100%;
+    margin-left: 135.5px;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__dropdown {
+    margin-right: 36px;
+  }
+
+  &__link {
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    color: #fff;
+    margin-right: 32px;
+  }
+}

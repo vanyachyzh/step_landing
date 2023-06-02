@@ -1,41 +1,28 @@
-# DIA Creative Agency Landing Page
+# STEP Test Project
 
-[Demo link](https://vanyachyzh.github.io/landing_dia/)
+[Demo](https://vanyachyzh.github.io/step_landing/)
 
-[Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia))
+[Figma](https://www.figma.com/file/ehcNP0TimkwJa8peVwLojJ/Untitled?type=design&node-id=4008-6288&t=lnIT6hA0rRhvrUbO-0)
 
-This is a landing page for DIA Creative Agency, built using HTML, CSS, and SCSS with BEM methodology. The landing page showcases the agency's services, portfolio, and team. The landing page is designed to be adaptive to different screen sizes, including mobile, tablet, and desktop devices, as well as screens over 1600px.
+This is the STEP test project, which involves the development of a fully responsive landing page with features such as a burger menu, slider, and accordion. It utilizes approaches such as Flexbox and Grid, along with the jQuery library and SCSS.
 
-## Features
+## Overview
+This project aims to assess my frontend development skills and understanding of various aspects of web development, including responsive design and the use of different tools and technologies.
 
-The landing page includes the following features:
+Within the STEP project, you will find the following functional components:
 
-1. Navigation bar for easy navigation to different sections of the page.
-2. Hero section with a call-to-action button.
-3. Services section highlighting the agency's various services.
-4. Portfolio section showcasing the agency's previous work.
-5. Team section introducing the agency's team members.
-6. Contact section with a contact form and social media links.
-7. Footer section with links to important pages.
+- Burger Menu: An interactive menu that is displayed on smaller screens and can be expanded and collapsed.
 
-## Adaptive Design
+- Slider: A component that allows users to navigate through different slides containing images or content.
 
-The landing page is designed to be fully responsive and adaptive to different screen sizes. The layout and styling of the page will adjust based on the device being used to view the page, providing a consistent and user-friendly experience across all devices.
-
-1. Mobile: The landing page is optimized for mobile devices with smaller screens. The navigation bar collapses into a dropdown menu, and the content is organized into a single column for easy scrolling.
-2. Tablet: The landing page is designed to provide a similar experience on tablet devices as on desktops, with the content organized into two columns for easy navigation.
-3. Desktop: The landing page is optimized for desktop devices with larger screens, with the content organized into three columns for a more immersive experience.
-4. Screens over 1600px: The landing page is designed to provide an optimized experience on larger screens, with the content expanding to fit the available screen space.
-
-## Getting Started
-
-To view the landing page, simply open the index.html file in your web browser. The landing page will load automatically, and you can explore the different sections by clicking on the navigation links.
+- Accordion: An interactive component that allows expanding and collapsing content, which can be used, for example, to display questions and answers.
 
 ## Technologies Used
 This project was built using the following technologies:
 
-1. HTML
-2. CSS
+1. Flexbox
+2. Grid
 3. SCSS
 4. BEM methodology
-5. JS
+6. jQuery
+
