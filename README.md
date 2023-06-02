@@ -2,7 +2,7 @@
 
 [Demo](https://vanyachyzh.github.io/step_landing/)
 
-[Figma](https://kiev.itstep.org/computer-graphics-and-design)
+[Figma]([https://kiev.itstep.org/computer-graphics-and-design](https://www.figma.com/file/ehcNP0TimkwJa8peVwLojJ/Untitled?type=design&node-id=4008-6288&t=lnIT6hA0rRhvrUbO-0))
 
 This is the STEP test project, which involves the development of a fully responsive landing page with features such as a burger menu, slider, and accordion. It utilizes approaches such as Flexbox and Grid, along with the jQuery library and SCSS.
 
