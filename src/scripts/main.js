@@ -6,6 +6,34 @@ const ps = $('.installation__ps');
 const slots = $('.installation__slots');
 const figma = $('.installation__figma');
 
+$(document).ready(function() {
+  const page = $('.page');
+  const hash = localStorage.getItem('hash');
+
+  if (hash) {
+    window.location.hash = hash;
+
+    if (window.location.hash === '#menu') {
+      localStorage.setItem('hash', window.location.hash);
+      page.css('overflow', 'hidden');
+    } else {
+      page.css('overflow', 'visible');
+    }
+  }
+});
+
+$(window).on('hashchange', function() {
+  const page = $('.page');
+
+  if (window.location.hash === '#menu') {
+    localStorage.setItem('hash', window.location.hash);
+    page.css('overflow', 'hidden');
+  } else {
+    localStorage.removeItem('hash');
+    page.css('overflow', 'visible');
+  }
+});
+
 $(document).on('mousemove', function(event) {
   const mouseX = event.clientX;
   const mouseY = event.clientY;

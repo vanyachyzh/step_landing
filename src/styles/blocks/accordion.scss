@@ -18,7 +18,7 @@
       ~ .collapsible-item-content {
         max-height: 100vh;
         padding: 15px 0;
-        transition: all 350ms;
+        transition: all ease 300ms;
         border-bottom: 1px solid rgba(221, 224, 235, 0.25);
 
         &:last-child {
@@ -52,7 +52,7 @@
         width: 24px;
         height: 24px;
         text-align: center;
-        transition: all 350ms;
+        transition: all ease 300ms;
       }
     }
 

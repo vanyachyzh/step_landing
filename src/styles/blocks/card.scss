@@ -33,6 +33,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #747478;
+    max-width: 416px;
 
     @include onTablet {
       display: block;
